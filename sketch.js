@@ -252,6 +252,16 @@ function reset() {
   
   trex.changeAnimation("running", trex_running);
   
+  if (localStorage["highscore"] < score) {
+    
+    localStorage["highscore"] = score;
+    
+  }
+  
+  console.log(localStorage["highscore"]);
+  
+  score = 0;
+
 }
 
 
